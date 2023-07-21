@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Appointment - PG Dekho</title>
+	<style type="text/css">* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+}
+
+.form {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	background-color: #fff;
+}
+
+.form h2 {
+	margin-bottom: 20px;
+	color: #333;
+	font-size: 32px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.form label {
+	display: block;
+	margin-bottom: 10px;
+	color: #666;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="date"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	font-weight: 400;
+	color: #333;
+}
+
+/* .form input[type ="submit"] */
+.button{
+	background-color: #05213f;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.logo {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #05213f;
+	color: #fff;
+}
+
+.logo img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.logo h1 {
+	font-size: 32px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.logo p {
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 10px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="form">
+			<h2>Book Appointment</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email Address:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="mobile">Mobile Number:</label>
+				<input type="tel" id="mobile" name="mobile" required>
+
+				<label for="date">Preferred Date for Visit:</label>
+				<input type="date" id="date" name="date" required>
+
+				<!-- <input type="submit" value="Book Appointment"> -->
+				<button type="submit" onclick="myFunction()"><a href="Finalyearproject_homepage.html" class="button">Book Appointment</a></button>
+				<script>
+					function myFunction(){
+					   alert("Successfully Updated");
+					}
+				   </script>
+				<button type="reset" class="button">reset</button>
+			</form>
+		</div>
+		<div class="logo">
+			<a class="navbar-brand" href="Finalyearproject_homepage.html">
+				<img src="image folder for project/PG logo.jpg" alt="LOGO" height="50px" class="d-inline-block align-text-top" >			
+			  </a>
+			<h1>PG Dekho</h1>
+			<p>Find your perfect PG</p>
+		</div>
+	</div>
+</body>
+</html>

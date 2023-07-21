@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+
+      .register-btn {
+        background-color: #3f3f42;
+        padding: 10px 30px;
+        border-radius: 10px;
+        box-shadow: -1px -1px 0.5px #3f3f42;
+        transition: 0.2s;
+        width: 38%;
+        cursor: pointer;
+        text-align: center;
+        display: inline;
+        position: relative;
+        bottom: 65px;
+        left: 320px;
+        font-family: 'Poppins', sans-serif;
+      }
+      .account{
+        font-size: 1.2rem; 
+        position: relative;
+        right: 20px;  
+        /* font-family: 'Poppins', sans-serif; */
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <main>
+      
+      <form method="post" action="/login">
+        <h1>Login Now</h1>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value="<%= locals.email %>"
+        />
+        <input type="password" name="password" placeholder="Password" />
+
+        <p class="error"><%= locals.message%></p>
+
+        <button class="login-btn" type="submit">Login</button>
+
+        <p class="account">Don't Have Account ?</p>
+        <div class="register-btn"><a href="/register">Register Now</a></div>
+      </form>
+    </main>
+  </body>
+</html>

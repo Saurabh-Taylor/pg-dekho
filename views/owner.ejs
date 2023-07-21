@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {  display: flex;
+  flex-direction: column;  align-items: center;
+  margin-top: 50px;}
+input[type="text"], input[type="number"] {
+  padding: 10px;  margin: 10px 0;
+  border-radius: 5px;  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);  width: 100%;
+  max-width: 350px;}
+button[type="submit"] {
+  padding: 10px 20px;  background-color: #2ecc71;
+  color: white;  border: none;
+  border-radius: 5px;  margin: 10px 0;
+  cursor: pointer;  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+/* Apply styles to the header */
+h1 {  font-size: 36px;
+  margin-bottom: 20px;  color: #2ecc71;
+  text-align: center;}
+/* Apply styles to the login link */
+.register-account {
+  margin-top: 20px;  text-align: center;
+}
+.login_btn {  display: flex;
+  justify-content: center;}
+.login_btn a {
+  text-decoration: none;  color: #2ecc71;
+  font-weight: bold;  margin-left: 5px;
+}
+.login_btn a:hover {  text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <form method="post">
+            <h1>Owner Room Details</h1>
+            <input type="text" name="name" placeholder="Name">
+            <input type="number" name="mobile" placeholder="Mobile">
+            <input type="text" name="address" placeholder="address">
+            <input type="text" name="room" placeholder="available rooms">
+            <input type="text" name="price" placeholder="price per month">
+            <button type="submit">Submit</button>            
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+</body>
+</html>
